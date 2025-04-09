@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ganancias en JS</title>
+    <script src="apuesta.js"></script>
+</head>
+<body>
+    <h1>DORADO BET</h1>
+    <h3>Calculadora en Ganancias en JS</h3>
+    <form action="apuestaForm"></form>
+        <label for="monto">Monto de la Apuesta:</label>
+        <input type="number" id="mont" name="mont" required step="0.01"> <br>
+        <br>
+        <label for="cuota">Cuota:</label>
+        <input type="number" id="cuota" name="cuota" step="0.01" required>
+        <br>
+        <br><button onclick="calcularGanancia()">Procesar Apuesta:</button> 
+    </form>
+    <div id="apuestaResult"></div>
+</body>
+</html>
